@@ -17,8 +17,9 @@
             </src>
         </video>
     </div>
-    <div class="container-fluid">
-        <h1 class="heading">Personal Site & Portfolio</h1>
+    
+        <div class="container-fluid">
+            <h1 class="heading">Personal Site & Portfolio</h1>
 
         <ul class="nav">
             <li class="nav-item">
@@ -45,6 +46,7 @@
         </ul>
     </div>
     <br>
+    <div>
     <div class="container">
         <div class="row">
             <div class="col col-shadow col1">
@@ -180,14 +182,30 @@
                     </div>
                 </div>
             </div>
-            <div id="backimg" class="col col-shadow col3">
-                <h1 class="title-col3">Anime recommendations</h1>
-                <img src="resources/Kaguya.jpg" alt="Kaguya-Sama: Love is War" class="img-fluid">
-                <button id="img-change" class="banner-right-arrow"></button>
+            <div id="backimg" class="col col-shadow col3 slideshow-container">
+                <div class="slide-default slide-transition carousel">
+                    <img src="resources/Kaguya.jpg" class="image-slide" alt="Kaguya: Love is War">
+                </div>
+                <div class="slide-default slide-transition carousel">
+                    <img src="resources/FateZero.jpg" class="image-slide" alt="Fate-Zero Lancelot">
+                </div>
+                <div class="slide-default slide-transition carousel">
+                    <img src="resources/FateZero1.jpg" class="image-slide" alt="Fate-Zero Saber">
+                </div>
                 
+                <a class="banner-right-arrow next" onclick="plusSlides(1)"></a>
+                <a class="banner-left-arrow prev" onclick="plusSlides(-1)"></a>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+    
             </div>
+            
         </div>
     </div>
+</div>
     <section></section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
